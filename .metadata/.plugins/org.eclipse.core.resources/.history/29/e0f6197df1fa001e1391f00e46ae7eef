@@ -1,0 +1,23 @@
+package com.invoiceprocessing.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.invoiceprocessing.entity.Invoice;
+import com.invoiceprocessing.services.InvoiceService;
+
+@RestController
+public class InvoiceController {
+	
+	@Autowired
+	InvoiceService invoiceservice;
+	
+	@PostMapping("/invoice")
+	public Invoice addInvoice(@RequestBody Invoice invoice) {
+		return this.invoiceservice.addInvoice(invoice);
+		
+	}
+
+}

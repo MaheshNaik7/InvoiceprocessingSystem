@@ -1,0 +1,11 @@
+package com.invoiceprocessing.services;
+
+
+import com.invoiceprocessing.entity.Invoice;
+
+
+public interface InvoiceService {
+	
+	public Invoice addInvoice(Invoice invoice);
+
+}

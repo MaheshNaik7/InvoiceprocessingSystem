@@ -1,0 +1,19 @@
+package com.invoiceprocessing.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.invoiceprocessing.Repository.InvoiceRepository;
+import com.invoiceprocessing.entity.Invoice;
+
+public class InvoiceServiceImpl implements InvoiceService {
+	
+	@Autowired
+	InvoiceRepository invoiceRepo;
+
+	@Override
+	public Invoice addInvoice(Invoice invoice) {
+		invoiceRepo.save(invoice);
+		return invoice;
+	}
+
+}

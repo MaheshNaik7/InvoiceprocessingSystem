@@ -1,0 +1,13 @@
+package com.invoiceprocessing.services;
+
+import com.invoiceprocessing.entity.Invoice;
+
+public class InvoiceServiceImpl implements InvoiceService {
+
+	@Override
+	public Invoice addInvoice(Invoice invoice) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

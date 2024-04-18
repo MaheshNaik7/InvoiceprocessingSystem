@@ -1,0 +1,5 @@
+package com.invoiceprocessing.controller;
+
+public class InvoiceController {
+
+}

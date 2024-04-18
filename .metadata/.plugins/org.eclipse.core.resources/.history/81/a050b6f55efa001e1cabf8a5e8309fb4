@@ -1,0 +1,5 @@
+package com.invoiceprocessing.services;
+
+public class InvoiceServiceImpl {
+
+}
